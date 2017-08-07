@@ -1,0 +1,25 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": ".",
+    "target": "es2015",
+    "rootDir": ".",
+    "outDir": "./dist",
+    "noImplicitAny": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "module": "commonjs",
+    "types": [
+      "@types/node",
+      "@types/mocha",
+      "@types/chai"
+    ]
+  },
+  "files": [
+    "index.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}

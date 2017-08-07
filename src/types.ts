@@ -1,0 +1,53 @@
+export const enum TokenType {
+  // Single character tokens
+  LEFT_PAREN,
+  RIGHT_PAREN,
+  LEFT_BRACE,
+  RIGHT_BRACE,
+  COMMA,
+  DOT,
+  MINUS,
+  PLUS,
+  SEMICOLON,
+  SLASH,
+  STAR,
+
+  BANG,
+  BANG_EQUAL,
+  EQUAL,
+  EQUAL_EQUAL,
+  GREATER,
+  GREATER_EQUAL,
+  LESS,
+  LESS_EQUAL,
+
+  AND,
+  ELSE,
+  ELSE_IF,
+  FALSE,
+  TRUE,
+  FUNCTION,
+  FOR,
+  IF,
+  NIL,
+  OR,
+  PRINT,
+  RETURN,
+  SUPER,
+  THIS,
+  VAL,
+  WHILE,
+
+  MODULE,
+  EXPORTS,
+  IMPORT,
+
+  IDENTIFIER,
+  STRING,
+  NUMBER,
+
+  TYPE,
+  TYPE_ALIAS,
+
+  EOF
+};

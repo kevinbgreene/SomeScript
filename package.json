@@ -1,0 +1,49 @@
+{
+  "name": "lox-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "rm -rf ./dist/; tsc -p ./tsconfig.json;",
+    "lint": "tslint src/**/*.ts",
+    "test": "npm run lint && NODE_ENV=test mocha --opts mocha.opts",
+    "cover": "NODE_ENV=test nyc mocha --opts mocha.cover.opts"
+  },
+  "author": "Kevin Greene <hightimesteddy@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.0.2",
+    "@types/mocha": "^2.2.41",
+    "@types/node": "8.0.10",
+    "chai": "^4.1.1",
+    "mocha": "^3.5.0",
+    "nyc": "^11.1.0",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.5.0",
+    "typescript": "2.4.1"
+  },
+  "nyc": {
+    "check-coverage": true,
+    "per-file": true,
+    "lines": 99,
+    "statements": 99,
+    "functions": 99,
+    "branches": 99,
+    "include": [
+      "src/*.ts",
+      "src/**/*.ts"
+    ],
+    "exclude": [
+      "src/*.spec.ts",
+      "src/**/*.spec.ts"
+    ],
+    "extension": [
+      ".ts"
+    ],
+    "reporter": [
+      "lcov",
+      "json"
+    ],
+    "all": true
+  }
+}
