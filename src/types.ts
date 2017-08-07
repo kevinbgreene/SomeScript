@@ -49,5 +49,5 @@ export const enum TokenType {
   TYPE,
   TYPE_ALIAS,
 
-  EOF
-};
+  EOF,
+}
