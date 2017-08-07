@@ -1,7 +1,7 @@
 {
-  "name": "lox-ts",
-  "version": "1.0.0",
-  "description": "",
+  "name": "somescript",
+  "version": "0.0.1",
+  "description": "A strongly typed and purely functional scripting language",
   "main": "dist/index.js",
   "scripts": {
     "build": "rm -rf ./dist/; tsc -p ./tsconfig.json;",
@@ -10,6 +10,10 @@
     "cover": "NODE_ENV=test nyc mocha --opts mocha.cover.opts"
   },
   "author": "Kevin Greene <hightimesteddy@gmail.com>",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/kevinbgreene/SomeScript.git"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.0.2",
